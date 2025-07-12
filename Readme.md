@@ -38,12 +38,12 @@ SnapTask is a revolutionary task management application that allows you to captu
 
 ## Screen Shorts
 <p align="center">
-  <img src="screenshorts/frontpage.jpg" alt="SnapTask Front Page" style="width:100%; max-width:300px; margin-bottom:10px;">
-  <img src="screenshorts/capture.jpg" alt="SnapTask Capture" style="width:100%; max-width:300px; margin-bottom:10px;">
-  <img src="screenshorts/dashboard.jpg" alt="SnapTask Dashboard" style="width:100%; max-width:300px; margin-bottom:10px;">
-  <img src="screenshorts/tasks.jpg" alt="SnapTask Tasks" style="width:100%; max-width:300px; margin-bottom:10px;">
-  <img src="screenshorts/completed.jpg" alt="SnapTask Completed" style="width:100%; max-width:300px; margin-bottom:10px;">
-  <img src="screenshorts/setting.jpg" alt="SnapTask Setting" style="width:100%; max-width:300px;">
+  <img src="screenshorts/frontpage.jpg" alt="SnapTask Front Page" style="width:200; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/capture.jpg" alt="SnapTask Capture" style="width:200; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/dashboard.jpg" alt="SnapTask Dashboard" style="width:200; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/tasks.jpg" alt="SnapTask Tasks" style="width:200; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/completed.jpg" alt="SnapTask Completed" style="width:200; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/setting.jpg" alt="SnapTask Setting" style="width:200; max-width:300px;">
 </p>
 
 
