@@ -37,12 +37,15 @@ SnapTask is a revolutionary task management application that allows you to captu
 - **Offline First**: Works without internet connection
 
 ## Screen Shorts
-<img src="screenshorts/frontpage.jpg" alt="SnapTask App Icon" width="200" height="450">
-<img src="screenshorts/capture.jpg" alt="SnapTask App Icon" width="200" height="450">
-<img src="screenshorts/dashboard.jpg" alt="SnapTask App Icon" width="200" height="450">
-<img src="screenshorts/tasks.jpg" alt="SnapTask App Icon" width="200" height="450">
-<img src="screenshorts/completed.jpg" alt="SnapTask App Icon" width="200" height="450">
-<img src="screenshorts/setting.jpg" alt="SnapTask App Icon" width="200" height="450">
+<p align="center">
+  <img src="screenshorts/frontpage.jpg" alt="SnapTask Front Page" style="width:100%; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/capture.jpg" alt="SnapTask Capture" style="width:100%; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/dashboard.jpg" alt="SnapTask Dashboard" style="width:100%; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/tasks.jpg" alt="SnapTask Tasks" style="width:100%; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/completed.jpg" alt="SnapTask Completed" style="width:100%; max-width:300px; margin-bottom:10px;">
+  <img src="screenshorts/setting.jpg" alt="SnapTask Setting" style="width:100%; max-width:300px;">
+</p>
+
 
 ## 🚀 Getting Started
 
