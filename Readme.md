@@ -36,6 +36,8 @@ SnapTask is a revolutionary task management application that allows you to captu
 - **Cross-Platform**: Available on Android, iOS, and Web
 - **Offline First**: Works without internet connection
 
+### *More comming Soon.....*
+
 ## Screen Shorts
 <p align="center">
   <img src="screenshorts/frontpage.jpg" alt="SnapTask Front Page" style="width:200px; max-width:300px; margin-bottom:10px;">
@@ -227,9 +229,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Email**: contact@snaptask.app
-- **GitHub Issues**: [Report a bug](https://github.com/yourusername/snaptask/issues)
-- **Documentation**: [Wiki](https://github.com/yourusername/snaptask/wiki)
+- **Email**: adityasagar9991@gmail.com
+- **GitHub Issues**: [Report a bug](https://github.com/as6769-2004/snap-task/issues/new)
+
 
 ## 🗺️ Roadmap
 
@@ -243,6 +245,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for productivity**
+
 
 *SnapTask - Capture your tasks, organize your life*
