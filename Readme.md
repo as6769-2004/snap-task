@@ -5,7 +5,8 @@
 
 SnapTask is a revolutionary task management application that allows you to capture and organize tasks using your device's camera. Take photos, record audio, and manage your tasks effortlessly with an intuitive and modern interface.
 
-![SnapTask App Icon](snap_task.png)
+<img src="snaptask_new/snap_task.png" alt="SnapTask App Icon" width="150" height="150">
+
 
 ## ✨ Features
 
@@ -34,6 +35,14 @@ SnapTask is a revolutionary task management application that allows you to captu
 - **Lightning Fast**: Optimized for speed and responsiveness
 - **Cross-Platform**: Available on Android, iOS, and Web
 - **Offline First**: Works without internet connection
+
+## Screen Shorts
+<img src="screenshorts/frontpage.jpg" alt="SnapTask App Icon" width="200" height="450">
+<img src="screenshorts/capture.jpg" alt="SnapTask App Icon" width="200" height="450">
+<img src="screenshorts/dashboard.jpg" alt="SnapTask App Icon" width="200" height="450">
+<img src="screenshorts/tasks.jpg" alt="SnapTask App Icon" width="200" height="450">
+<img src="screenshorts/completed.jpg" alt="SnapTask App Icon" width="200" height="450">
+<img src="screenshorts/setting.jpg" alt="SnapTask App Icon" width="200" height="450">
 
 ## 🚀 Getting Started
 

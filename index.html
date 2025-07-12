@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapTask - Capture Tasks with Your Camera</title>
-    <meta name="description" content="SnapTask is a revolutionary task management app that lets you capture and organize tasks using your camera. Take photos, record audio, and manage your tasks effortlessly.">
+    <meta name="description"
+        content="SnapTask is a revolutionary task management app that lets you capture and organize tasks using your camera. Take photos, record audio, and manage your tasks effortlessly.">
     <meta name="keywords" content="task management, camera app, productivity, photo tasks, audio recording, mobile app">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="SnapTask - Capture Tasks with Your Camera">
-    <meta property="og:description" content="Revolutionary task management app that lets you capture and organize tasks using your camera.">
+    <meta property="og:description"
+        content="Revolutionary task management app that lets you capture and organize tasks using your camera.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="snap_task.png">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="snap_task.png">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
         }
-        
+
         /* Header */
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -47,7 +50,7 @@
             z-index: 1000;
             backdrop-filter: blur(10px);
         }
-        
+
         .nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -56,7 +59,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
@@ -64,28 +67,28 @@
             align-items: center;
             gap: 0.5rem;
         }
-        
+
         .logo i {
             font-size: 2rem;
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
             font-weight: 500;
             transition: opacity 0.3s;
         }
-        
+
         .nav-links a:hover {
             opacity: 0.8;
         }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -95,7 +98,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -106,7 +109,7 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
             opacity: 0.3;
         }
-        
+
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -114,21 +117,21 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             animation: fadeInUp 1s ease-out;
         }
-        
+
         .hero p {
             font-size: 1.25rem;
             margin-bottom: 2rem;
             opacity: 0.9;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
-        
+
         .cta-buttons {
             display: flex;
             gap: 1rem;
@@ -136,7 +139,7 @@
             flex-wrap: wrap;
             animation: fadeInUp 1s ease-out 0.4s both;
         }
-        
+
         .btn {
             padding: 1rem 2rem;
             border: none;
@@ -150,41 +153,41 @@
             transition: all 0.3s;
             cursor: pointer;
         }
-        
+
         .btn-primary {
             background: #FFD700;
             color: #333;
         }
-        
+
         .btn-primary:hover {
             background: #FFC700;
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
         }
-        
+
         .btn-secondary {
             background: transparent;
             color: white;
             border: 2px solid white;
         }
-        
+
         .btn-secondary:hover {
             background: white;
             color: #333;
         }
-        
+
         /* Features Section */
         .features {
             padding: 5rem 0;
             background: #f8f9fa;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -192,13 +195,13 @@
             margin-bottom: 3rem;
             color: #333;
         }
-        
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .feature-card {
             background: white;
             padding: 2rem;
@@ -207,43 +210,43 @@
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
-        
+
         .feature-icon {
             font-size: 3rem;
             color: #667eea;
             margin-bottom: 1rem;
         }
-        
+
         .feature-card h3 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
             color: #333;
         }
-        
+
         .feature-card p {
             color: #666;
             line-height: 1.6;
         }
-        
+
         /* Screenshots Section */
         .screenshots {
             padding: 5rem 0;
             background: white;
         }
-        
+
         .screenshots-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .screenshot {
             background: #f8f9fa;
             border-radius: 15px;
@@ -251,11 +254,11 @@
             text-align: center;
             transition: transform 0.3s;
         }
-        
+
         .screenshot:hover {
             transform: scale(1.05);
         }
-        
+
         .screenshot img {
             width: 100%;
             max-width: 200px;
@@ -263,13 +266,13 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         .screenshot h4 {
             margin-top: 1rem;
             font-weight: 600;
             color: #333;
         }
-        
+
         /* Download Section */
         .download {
             padding: 5rem 0;
@@ -277,26 +280,26 @@
             color: white;
             text-align: center;
         }
-        
+
         .download h2 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
-        
+
         .download p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
-        
+
         .download-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .download-btn {
             background: #FFD700;
             color: #333;
@@ -309,13 +312,13 @@
             gap: 0.5rem;
             transition: all 0.3s;
         }
-        
+
         .download-btn:hover {
             background: #FFC700;
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
         }
-        
+
         /* Footer */
         .footer {
             background: #333;
@@ -323,13 +326,13 @@
             padding: 3rem 0 1rem;
             text-align: center;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -337,66 +340,67 @@
             margin-bottom: 2rem;
             flex-wrap: wrap;
         }
-        
+
         .footer-links a {
             color: white;
             text-decoration: none;
             opacity: 0.8;
             transition: opacity 0.3s;
         }
-        
+
         .footer-links a:hover {
             opacity: 1;
         }
-        
+
         .footer-bottom {
             border-top: 1px solid #555;
             padding-top: 1rem;
             opacity: 0.7;
         }
-        
+
         /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .btn {
                 width: 100%;
                 max-width: 300px;
                 justify-content: center;
             }
-            
+
             .features-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .screenshots-grid {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
         }
-        
+
         /* Loading Animation */
         .loading-animation {
             display: inline-block;
@@ -407,11 +411,13 @@
             border-top-color: #fff;
             animation: spin 1s ease-in-out infinite;
         }
-        
+
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
-        
+
         /* Thank You Popup */
         .popup-overlay {
             position: fixed;
@@ -426,7 +432,7 @@
             z-index: 10000;
             backdrop-filter: blur(5px);
         }
-        
+
         .popup-content {
             background: white;
             border-radius: 20px;
@@ -438,58 +444,66 @@
             animation: popupSlideIn 0.5s ease-out;
             position: relative;
         }
-        
+
         @keyframes popupSlideIn {
             from {
                 opacity: 0;
                 transform: translateY(-50px) scale(0.9);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
             }
         }
-        
+
         .popup-icon {
             font-size: 4rem;
             color: #FFD700;
             margin-bottom: 1rem;
             animation: bounce 1s ease-in-out;
         }
-        
+
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-10px);
             }
+
             60% {
                 transform: translateY(-5px);
             }
         }
-        
+
         .popup-title {
             font-size: 2rem;
             font-weight: 700;
             color: #333;
             margin-bottom: 1rem;
         }
-        
+
         .popup-message {
             font-size: 1.1rem;
             color: #666;
             margin-bottom: 2rem;
             line-height: 1.6;
         }
-        
+
         .popup-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .popup-btn {
             padding: 0.8rem 1.5rem;
             border: none;
@@ -503,27 +517,27 @@
             transition: all 0.3s;
             cursor: pointer;
         }
-        
+
         .popup-btn-primary {
             background: #667eea;
             color: white;
         }
-        
+
         .popup-btn-primary:hover {
             background: #5a6fd8;
             transform: translateY(-2px);
         }
-        
+
         .popup-btn-secondary {
             background: #f8f9fa;
             color: #333;
             border: 2px solid #e9ecef;
         }
-        
+
         .popup-btn-secondary:hover {
             background: #e9ecef;
         }
-        
+
         .close-popup {
             position: absolute;
             top: 1rem;
@@ -537,12 +551,12 @@
             border-radius: 50%;
             transition: all 0.3s;
         }
-        
+
         .close-popup:hover {
             background: #f8f9fa;
             color: #333;
         }
-        
+
         .download-progress {
             width: 100%;
             height: 6px;
@@ -551,7 +565,7 @@
             margin: 1rem 0;
             overflow: hidden;
         }
-        
+
         .progress-bar {
             height: 100%;
             background: linear-gradient(90deg, #667eea, #764ba2);
@@ -561,6 +575,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -581,7 +596,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Capture Tasks with Your Camera</h1>
-            <p>Revolutionary task management app that lets you capture and organize tasks using your camera. Take photos, record audio, and manage your tasks effortlessly.</p>
+            <p>Revolutionary task management app that lets you capture and organize tasks using your camera. Take
+                photos, record audio, and manage your tasks effortlessly.</p>
             <div class="cta-buttons">
                 <a href="#download" class="btn btn-primary">
                     <i class="fas fa-download"></i>
@@ -605,47 +621,60 @@
                         <i class="fas fa-camera"></i>
                     </div>
                     <h3>Camera Capture</h3>
-                    <p>Take photos of documents, whiteboards, or any visual task. Our advanced camera integration makes task capture intuitive and efficient.</p>
+                    <p>Take photos of documents, whiteboards, or any visual task. Our advanced camera integration makes
+                        task capture intuitive and efficient.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-microphone"></i>
                     </div>
                     <h3>Voice Recording</h3>
-                    <p>Record audio notes for your tasks. Perfect for capturing ideas on the go or adding detailed descriptions to your tasks.</p>
+                    <p>Record audio notes for your tasks. Perfect for capturing ideas on the go or adding detailed
+                        descriptions to your tasks.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
                     <h3>Smart Organization</h3>
-                    <p>Automatically organize your tasks with intelligent categorization. Keep track of completed tasks and manage your productivity.</p>
+                    <p>Automatically organize your tasks with intelligent categorization. Keep track of completed tasks
+                        and manage your productivity.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Cross-Platform</h3>
-                    <p>Available on Android, iOS, and web platforms. Sync your tasks across all your devices seamlessly.</p>
+                    <p>Available on Android, iOS, and web platforms. Sync your tasks across all your devices seamlessly.
+                    </p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Privacy First</h3>
-                    <p>Your data stays on your device. No cloud storage required - complete privacy and control over your task data.</p>
+                    <p>Your data stays on your device. No cloud storage required - complete privacy and control over
+                        your task data.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Lightning Fast</h3>
-                    <p>Optimized for speed and performance. Capture tasks instantly and access them immediately without any delays.</p>
+                    <p>Optimized for speed and performance. Capture tasks instantly and access them immediately without
+                        any delays.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-bolt"></i> -->
+                    </div>
+                    <h3>! Notice !</h3>
+                    <p>Comming soon more features...</p>
                 </div>
             </div>
         </div>
@@ -657,21 +686,26 @@
             <h2 class="section-title">App Screenshots</h2>
             <div class="screenshots-grid">
                 <div class="screenshot">
-                    <img src="snap_task.png" alt="SnapTask App Icon">
-                    <h4>Beautiful Interface</h4>
+                    <img src="screenshorts/frontpage.jpg" alt="SnapTask App Icon">
+                    <h4>First interface</h4>
                 </div>
                 <div class="screenshot">
-                    <img src="snap_task.png" alt="Camera Screen">
-                    <h4>Camera Integration</h4>
+                    <img src="screenshorts/dashboard.jpg" alt="Camera Screen">
+                    <h4>Simple Dashboard</h4>
                 </div>
                 <div class="screenshot">
-                    <img src="snap_task.png" alt="Task Management">
-                    <h4>Task Dashboard</h4>
+                    <img src="screenshorts/tasks.jpg" alt="Task Management">
+                    <h4>Task Overview</h4>
                 </div>
                 <div class="screenshot">
-                    <img src="snap_task.png" alt="Settings">
+                    <img src="screenshorts/capture.jpg" alt="Settings">
+                    <h4>Snap Capture</h4>
+                </div>
+                <div class="screenshot">
+                    <img src="screenshorts/setting.jpg" alt="Settings">
                     <h4>Customizable Settings</h4>
                 </div>
+
             </div>
         </div>
     </section>
@@ -682,11 +716,12 @@
             <h2>Ready to Get Started?</h2>
             <p>Download SnapTask today and revolutionize how you manage tasks</p>
             <div class="download-buttons">
-                <a href="https://github.com/as6769-2004/snap-task/raw/refs/heads/main/app-release.apk" class="download-btn" onclick="downloadAndroid()">
+                <a href="https://github.com/as6769-2004/snap-task/raw/refs/heads/main/app-release.apk"
+                    class="download-btn" onclick="downloadAndroid()">
                     <i class="fab fa-google-play"></i>
                     Download for Android
                 </a>
-                
+
                 <a href="#" class="download-btn" onclick="downloadApp()">
                     <i class="fab fa-apple"></i>
                     Download for iOS
@@ -721,22 +756,22 @@
             <button class="close-popup" onclick="closePopup()">
                 <i class="fas fa-times"></i>
             </button>
-            
+
             <div class="popup-icon">
                 <i class="fas fa-download"></i>
             </div>
-            
+
             <h2 class="popup-title">Thank You!</h2>
-            
+
             <p class="popup-message">
-                Your download is starting! We're excited to have you try SnapTask. 
+                Your download is starting! We're excited to have you try SnapTask.
                 Get ready to revolutionize how you manage tasks with your camera.
             </p>
-            
+
             <div class="download-progress">
                 <div class="progress-bar" id="progressBar"></div>
             </div>
-            
+
             <div class="popup-buttons">
                 <button class="popup-btn popup-btn-primary" onclick="openAppStore()">
                     <i class="fas fa-external-link-alt"></i>
@@ -772,7 +807,7 @@
         }
 
         // Add scroll effect to header
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('.header');
             if (window.scrollY > 100) {
                 header.style.background = 'rgba(102, 126, 234, 0.95)';
@@ -785,25 +820,25 @@
         function downloadAndroid() {
             const originalContent = document.querySelector('.download-btn').innerHTML;
             document.querySelector('.download-btn').innerHTML = '<span class="loading-animation"></span> Downloading...';
-            
+
             // Show popup first
-            
+
             showThankYouPopup();
-            
+
             // Start actual download after a short delay
             setTimeout(() => {
-                window.open('https://github.com/as6769-2004/snap-task/releases/download/v1.0/app-release.apk', '_blank');
+                window.open('https://github.com/as6769-2004/snap-task/raw/refs/heads/main/app-release.apk', '_blank');
                 document.querySelector('.download-btn').innerHTML = originalContent;
             }, 1000);
         }
 
         // Add loading animation to other download buttons (iOS and Web)
         document.querySelectorAll('.download-btn:not([href*="github.com"])').forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 e.preventDefault();
                 const originalContent = this.innerHTML;
                 this.innerHTML = '<span class="loading-animation"></span> Downloading...';
-                
+
                 setTimeout(() => {
                     this.innerHTML = originalContent;
                     showThankYouPopup();
@@ -815,15 +850,15 @@
         function showThankYouPopup() {
             const popup = document.getElementById('thankYouPopup');
             const progressBar = document.getElementById('progressBar');
-            
+
             // Show popup
             popup.style.display = 'flex';
-            
+
             // Animate progress bar
             setTimeout(() => {
                 progressBar.style.width = '100%';
             }, 500);
-            
+
             // Auto-hide after 5 seconds
             setTimeout(() => {
                 closePopup();
@@ -833,10 +868,10 @@
         function closePopup() {
             const popup = document.getElementById('thankYouPopup');
             const progressBar = document.getElementById('progressBar');
-            
+
             // Reset progress bar
             progressBar.style.width = '0%';
-            
+
             // Hide popup with fade out effect
             popup.style.opacity = '0';
             setTimeout(() => {
@@ -848,7 +883,7 @@
         function openAppStore() {
             // Detect platform and open appropriate app store
             const userAgent = navigator.userAgent.toLowerCase();
-            
+
             if (userAgent.includes('android')) {
                 window.open('https://play.google.com/store/apps/details?id=com.snaptask.app', '_blank');
             } else if (userAgent.includes('iphone') || userAgent.includes('ipad')) {
@@ -857,23 +892,24 @@
                 // Default to Google Play Store
                 window.open('https://play.google.com/store/apps/details?id=com.snaptask.app', '_blank');
             }
-            
+
             closePopup();
         }
 
         // Close popup when clicking outside
-        document.getElementById('thankYouPopup').addEventListener('click', function(e) {
+        document.getElementById('thankYouPopup').addEventListener('click', function (e) {
             if (e.target === this) {
                 closePopup();
             }
         });
 
         // Close popup with Escape key
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') {
                 closePopup();
             }
         });
     </script>
 </body>
+
 </html>
