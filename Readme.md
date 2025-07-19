@@ -1,7 +1,7 @@
 # 📸 SnapTask
 ### [*Try It Now !!!*](https://as6769-2004.github.io/snap-task/)
 
-**Capture Tasks with Your Camera**
+**Capture Tasks with Camera**
 
 SnapTask is a revolutionary task management application that allows you to capture and organize tasks using your device's camera. Take photos, record audio, and manage your tasks effortlessly with an intuitive and modern interface.
 
